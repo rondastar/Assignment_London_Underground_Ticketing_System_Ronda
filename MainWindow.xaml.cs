@@ -10,6 +10,10 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using static System.Collections.Specialized.BitVector32;
 
+// Ronda Rutherford
+// Assignment: London Underground Commute
+// 01/18/2024
+
 namespace Assignment_London_Underground_Ticketing_System
 {
     /// <summary>
