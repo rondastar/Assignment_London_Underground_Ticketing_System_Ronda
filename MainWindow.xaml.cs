@@ -26,7 +26,7 @@ namespace Assignment_London_Underground_Ticketing_System
         // Example YourList<Ride> Riders
         public RiderList<Rider> Riders;
 
-        int numberOfRiders = 10; // Changes this to something higher than 100 to check your list is working
+        int numberOfRiders = 150; // Changes this to something higher than 100 to check your list is working
 
         public MainWindow()
         {
