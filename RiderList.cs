@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Assignment_London_Underground_Ticketing_System
 {
-    internal class RiderList<T> : IEnumerable<T>
+    public class RiderList<T> : IEnumerable<T>
     {
         private T[] _items;
         private int _count;
