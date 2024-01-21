@@ -24,7 +24,7 @@ namespace Assignment_London_Underground_Ticketing_System
         // Replace "WillsList" with your Custom List name in 2 places.
         // 1. Replace here
         // Example YourList<Ride> Riders
-        public WillsList<Rider> Riders;
+        public RiderList<Rider> Riders;
 
         int numberOfRiders = 10; // Changes this to something higher than 100 to check your list is working
 
@@ -63,7 +63,7 @@ namespace Assignment_London_Underground_Ticketing_System
         {
             // 2. And here
             // Ex Riders = new YourList<Rider>();
-            Riders = new WillsList<Rider>();
+            Riders = new RiderList<Rider>();
             Random rnd = new Random();
             HashSet<int> usedNumbers = new HashSet<int>();
 
