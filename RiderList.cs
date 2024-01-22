@@ -56,7 +56,12 @@ namespace Assignment_London_Underground_Ticketing_System
             _count--;
         }
 
-        // GetItem(T) -- NEED TO ADD THIS!!
+        public T GetItem(int index)
+        {
+            ValidateIndexWithinRange(index);
+            T item = _items[index]; 
+            return item;
+        }
 
         public void ValidateIndexWithinRange(int index)
         {
