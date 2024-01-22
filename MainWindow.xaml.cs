@@ -22,7 +22,7 @@ namespace Assignment_London_Underground_Ticketing_System
     public partial class MainWindow : Window
     {
         // Replace "WillsList" with your Custom List name in 2 places.
-        // 1. Replace here
+        // 1. Replace here -- DONE
         // Example YourList<Ride> Riders
         public RiderList<Rider> Riders;
 
@@ -42,7 +42,9 @@ namespace Assignment_London_Underground_Ticketing_System
         {
             var searchStation = cmbSearchStation.SelectedIndex;
 
-            // Enter code here to show all riders who started there ride from the selected station
+            // Enter code here to show all riders who started their ride from the selected station
+            RiderList<Rider> FilteredRiders = RiderSearch.ReturnRidersAtStation(searchStation, Riders);
+            lvFilteredRiders.ItemsSource = FilteredRiders;
 
             // lvRiders.ItemsSource = YourReturnedResults;
         } // OnSearchStation
@@ -50,6 +52,8 @@ namespace Assignment_London_Underground_Ticketing_System
         private void OnShowActive(object sender, RoutedEventArgs e)
         {
             // Enter code here to display all riders currently riding the underground
+            RiderList<Rider> ActiveRiders = RiderSearch.ReturnAllActiveRiders(Riders);
+            lvFilteredRiders.ItemsSource = ActiveRiders;
 
             // lvRiders.ItemsSource = YourReturnedResults;
         } // OnShowActive

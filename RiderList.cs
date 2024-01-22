@@ -56,6 +56,8 @@ namespace Assignment_London_Underground_Ticketing_System
             _count--;
         }
 
+        // GetItem(T) -- NEED TO ADD THIS!!
+
         public void ValidateIndexWithinRange(int index)
         {
             if (index < 0 || index > _count) throw new ArgumentOutOfRangeException(nameof(index));
